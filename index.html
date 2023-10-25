@@ -1,47 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Ultimatum | Results summary component</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="value">
+        <h3>Your Result</h3>
+        <div class="gola">
+          <span>76</span>
+          <p>of 100</p>
+        </div>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
+        <div class="result-text-wrapper">
+          <h4>Great</h4>
+          <div>
+            <p>You scored higher than 65% of the people who have taken these tests.</p>
+          </div>
+        </div>
+      </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+      <div class="summary-sec">
+        <h3>Summary</h3>
+        <div class="parameters">
 
-  Your Result
-  76
-  of 100
+          <div class="red-sec">
+            <div class="sec-name">
+              <img src="../assets/images/icon-reaction.svg" alt="Reaction" />
+              <span>Reaction</span>
+            </div>
+            <div class="sec-value">
+              <span> <b>80</b> / 100</span>
+            </div>
+          </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+          <div class="yellow-sec">
+            <div class="sec-name">
+              <img src="../assets/images/icon-memory.svg" alt="Reaction" />
+              <span>Memory</span>
+            </div>
+            <div class="sec-value">
+                <span> <b>92</b> / 100</span>
+            </div>
+          </div>
 
-  Reaction
-  80 / 100
+          <div class="green-sec">
+            <div class="sec-name">
+              <img src="../assets/images/icon-verbal.svg" alt="Reaction" />
+              <span>Verbal</span>
+            </div>
+            <div class="sec-value">
+                <span> <b>61</b> / 100</span>
+            </div>
+          </div>
 
-  Memory
-  92 / 100
+          <div class="purple-sec">
+            <div class="sec-name">
+              <img src="../assets/images/icon-visual.svg" alt="Reaction" />
+              <span>Visual</span>
+            </div>
+            <div class="sec-value">
+                <span> <b>72</b> / 100</span>
+            </div>
+          </div>
 
-  Verbal
-  61 / 100
+        </div>
 
-  Visual
-  72 / 100
-
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+        <button class="only-btn">Continue</button>
+      </div>
+    </div>
+  </body>
 </html>
